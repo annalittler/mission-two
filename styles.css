@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  /* background-color: rgba(25, 72, 240); */
+  background: rgb(9, 63, 142);
+
+  background: linear-gradient(
+    90deg,
+    rgba(9, 63, 142, 1) 1%,
+    rgba(29, 112, 199, 1) 46%,
+    rgba(78, 165, 255, 1) 100%
+  );
+}
+
+body {
+  /* background-color: #e7da7c; */
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  margin: 0;
+  color: rgb(65, 65, 65);
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0px;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  height: 10vh;
+  /* background-color: #75b1db83;*/
+  /* background-color: #daa4d6; */
+  /* background-color: rgba(25, 72, 240, 0.5); */
+  /* background-color: rgba(92, 41, 98, 0.5); */
+  /* box-shadow: inset 0 0 0 1000px rgba(92, 41, 98, 0.5); */
+  background: rgb(9, 63, 142);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 63, 142, 0.7) 1%,
+    rgba(29, 112, 199, 0.7) 46%,
+    rgba(78, 165, 255, 0.7) 100%
+  );
+  width: 100%;
+  width: 100vw;
+  padding: 0px 25px;
+  margin-top: 0px;
+  position: sticky;
+  top: 0;
+}
+
+.navItem {
+  margin: 0px 20px;
+  text-decoration: inherit;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  transition: color 0.1s;
+}
+
+.navItem:hover {
+  color: rgb(226, 226, 226);
+  /* box-shadow: inset; */
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstBox {
+  height: 92vh;
+  margin: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(9, 63, 142, 0.8) 1%,
+    rgba(29, 112, 199, 0.8) 46%,
+    rgba(78, 165, 255, 0.8) 100%
+  );
+  /* background-position: 50%; */
+  background-size: cover;
+  width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstBoxText {
+  width: 40%;
+  font-size: 30px;
+  font-weight: 200;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  /* color: white; */
+}
+p {
+  text-align: center;
+}
+
+#secondBox {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0;
+  color: rgb(65, 65, 65);
+  background-color: white;
+}
+
+.secondBoxImg {
+  width: 100%;
+  /* border: 2px red solid; */
+}
+
+.secondBoxSection {
+  /* border: 2px blue solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.secondBoxTitleDiv {
+  text-align: center;
+  font-size: 25px;
+  /* height: auto; */
+}
+
+.secondBoxDiv {
+  /* border: 2px red solid; */
+  width: 30%;
+}
+
+.secondBoxDiv h2,
+.secondBoxDiv h3,
+.secondBoxDiv p {
+  margin: 5% 25px;
+  /* border: 2px red solid; */
+}
+
+.secondBoxDiv h3 {
+  font-size: 25px;
+  font-weight: 300;
+  /* border: 2px solid green; */
+}
+
+.secondBoxDiv h2 {
+  font-size: 35px;
+  font-weight: 400;
+  /* border: 2px solid green; */
+}
+
+.secondBoxDiv p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.secondBoxButton {
+  font-size: 15px;
+  padding: 15px 10px;
+  margin: 18px 25px;
+
+  height: 50px;
+  width: 125px;
+  background-color: rgb(33, 100, 201);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgb(180, 180, 180);
+}
+
+.secondBoxButtonDiv {
+  /* border: 2px red solid; */
+  /* margin: 0 10%; */
+
+  /* padding: 10px; */
+}
+.thirdBox {
+  /* border: 2px red solid; */
+  background: linear-gradient(
+      90deg,
+      rgba(9, 63, 142, 0.85) 1%,
+      rgba(29, 112, 199, 0.85) 46%,
+      rgba(78, 165, 255, 0.85) 100%
+    ),
+    url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-position: 50%;
+  display: flex;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 150px;
+  padding: 0 10%;
+  /* height: 90vh; */
+  /* border: 2px red solid; */
+  /* background-color: red; */
+}
+
+.thirdBox > div:first-of-type {
+  width: auto;
+  /* text-align: left; */
+}
+
+.thirdBoxDiv {
+  width: 18%;
+  /* border: 2px solid pink; */
+  height: 0 auto;
+  /* padding: 0; */
+}
+
+.thirdBoxDiv > h1 {
+  text-align: left;
+}
+
+.thirdBoxDiv > h3 {
+  /* border: 2px solid red; */
+  font-size: 65px;
+  margin: 0;
+}
+
+.thirdBoxDiv > p {
+  /* border: 2px solid red; */
+  margin: 0;
+}
+
+.imgDesc {
+  text-align: left;
+}
