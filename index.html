@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Test</title>
+    <script src="https://kit.fontawesome.com/8cae90a6a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,120 +15,381 @@
 </head>
 
 <body>
-    <div class="navAndFirstBox">
-        <div id="nav">
-            <div class="divNavItem">
-                <a href="" class="navItem" id="homeButton">Home</a>
+
+    <div class="popup-bg">
+        <div id="popup">
+            <div class="popupMain">
+                <h2 id="popuph2">GET A QUOTE</h2>
+                <input type="text" class="popupInput" id="popupNameInput" placeholder="Enter your name">
+                <input type="email" class="popupInput" id="popupEmailInput" placeholder="Enter your email">
+                <input type="tel" class="popupInput" id="popupPhoneInput" placeholder="Enter your phone number">
+                <input type="text" class="popupInput" id="popupNotesInput" placeholder="Enter your requirements">
+                <button for="submit" id="popupBtn">SUBMIT</button>
+
             </div>
-            <div class="divNavItem">
-                <a href="" class="navItem">About</a>
+            <div id="popupAlt" class="popupAltStyle">
+                <h2>Thanks, Anna! We'll be in touch to get more information about your project.</h2>
             </div>
-            <div class="divNavItem">
-                <a href="" class="navItem">Contact</a>
-            </div>
+            <span id="popupX"><i class="fa-solid fa-x"></i></span>
+
         </div>
-        <div id="mainContainer">
-            <!-- <div id="logo">Logo/h1 goes here</div> -->
-            <div id="firstBox">
+
+    </div>
+    </div>
+    <div id="nav">
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <div class="divNavItem">
+                <li><a href="" class="navItem" id="homeButton">Home</a></li>
+            </div>
+            <div class="divNavItem">
+                <li> <a href="" class="navItem">About</a></li>
+            </div>
+            <div class="divNavItem">
+                <li> <a href="" class="navItem">Contact</a></li>
+
+            </div>
+            <div class="divNavItem">
+                <li><a href="" class="navItem">Careers</a></li>
+            </div>
+        </ul>
+    </div>
+
+
+    <div id="mainContainer">
+
+        <div class="firstBoxMainDiv">
+
+            <div id="firstBoxLeft">
                 <div class="firstBoxText">
                     <h1>Your Company</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates magni commodi, a
-                        labore
-                        numquam veniam, recusandae non sunt at fuga.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="buttonStyle" id="quoteButton">GET A FREE QUOTE</button>
+                    <button id="altButtonStyle">FIND OUT MORE</button>
 
                 </div>
-                <button class="quoteButton">GET A FREE QUOTE</button>
-                <div class="mainImageDiv">
-                </div>
 
+            </div>
+
+            <div class="firstBoxRight">
+                <img src="images/9812.jpg" class="mainImage" alt="">
             </div>
         </div>
-        <div id="secondBox">
-            <div class="secondBoxTitleDiv">
-                <h2 class="secondBoxTitleText">How can we help you?</h2>
-            </div>
-            <section class="secondBoxSection">
-                <div class="secondBoxDiv">
-                    <img src="images/pic1.jpg" class="secondBoxImg" alt="">
-                    <h2>Example</h2>
-                    <h3>CREATIVE SOLUTIONS</h3>
-                    <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <button class="secondBoxButton">READ MORE</button>
-
-                </div>
-
-                <div class="secondBoxDiv">
-                    <img src="images/pic3.jpg" class="secondBoxImg" alt="">
-                    <h2>Example</h2>
-                    <h3>CREATIVE SOLUTIONS</h3>
-                    <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <button class="secondBoxButton">READ MORE</button>
-                </div>
-
-                <div class="secondBoxDiv">
-                    <img src="images/pic2.jpg" class="secondBoxImg" alt="">
-                    <h2>Example</h2>
-                    <h3>CREATIVE SOLUTIONS</h3>
-                    <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <button class="secondBoxButton">READ MORE</button>
-                </div>
-            </section>
-        </div>
-        <div class="thirdBox">
-            <div class="thirdBoxDiv">
-                <h1>We're a
-                    <br>
-                    New Zealand
-                    <br>
-                    based company
-                </h1>
-            </div>
-            <div class="thirdBoxDiv">
-                <h3>15</h3>
-                <p>years of experience</p>
-            </div>
-            <div class="thirdBoxDiv">
-                <h3>300+</h3>
-                <p>Google first page rankings</p>
-            </div>
-            <div class="thirdBoxDiv">
-                <h3>200+</h3>
-                <p>websites built</p>
-            </div>
-        </div>
-        <div class="fourthBox">
-            <div class="fourthBoxLeft">
-                <div class="row1">
-                    <div class="fourthBoxImage noDisplay" id="fourthBoxImageOne"></div>
-                    <div class="fourthBoxImage noDisplay" id="fourthBoxImageTwo"></div>
-                </div>
-                <div class="row2">
-                    <div class="fourthBoxImage noDisplay" id="fourthBoxImageThree"></div>
-                    <div class="fourthBoxImage noDisplay" id="fourthBoxImageFour"></div>
-                </div>
-            </div>
-            <div class="fourthBoxRight">
-                <div class="fourthBoxText">
-                    <h1>We create stunning websites</h1>
-                    <h2>Get more for your business</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dicta tenetur ducimus et, sed
-                        aut exercitationem pariatur quae voluptatem vel, tempora, a distinctio inventore praesentium?
-                        Accusantium quo recusandae aspernatur esse? </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum eligendi maxime, impedit
-                        dolor consequuntur placeat doloribus nesciunt dolorem rerum aperiam voluptas dignissimos
-                        possimus magnam corporis tenetur officiis earum suscipit. Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Quos, temporibus sed facilis, qui quae natus quibusdam labore
-                        earum deleniti dignissimos nemo.</p>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="footer"></div>
     </div>
+    </div>
+    <!--  -->
+    <div class="thirdBox">
+        <div class="thirdBoxDiv">
+            <h1>We're a
+                <!-- <br> -->
+                New Zealand
+                <!-- <br> -->
+                based company
+            </h1>
+        </div>
+        <div class="thirdBoxDiv">
+            <h3>15</h3>
+            <p>years of experience</p>
+        </div>
+        <div class="thirdBoxDiv">
+            <h3>300+</h3>
+            <p>Google first page rankings</p>
+        </div>
+        <div class="thirdBoxDiv">
+            <h3>200+</h3>
+            <p>websites built</p>
+        </div>
+    </div>
+    <!--  -->
+    <div id="secondBox">
+        <div class="secondBoxTitleDiv">
+            <h2 class="secondBoxTitleText">How can we help you?</h2>
+        </div>
+        <section class="secondBoxSection">
+            <div class="secondBoxDiv">
+                <img src="images/pic1.jpg" class="secondBoxImg" alt="">
+                <h2>Example</h2>
+                <h3>CREATIVE SOLUTIONS</h3>
+                <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <button class="secondBoxButton buttonStyle">READ MORE</button>
+
+            </div>
+
+            <div class="secondBoxDiv">
+                <img src="images/pic3.jpg" class="secondBoxImg" alt="">
+                <h2>Example</h2>
+                <h3>CREATIVE SOLUTIONS</h3>
+                <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <button class="secondBoxButton buttonStyle">READ MORE</button>
+            </div>
+
+            <div class="secondBoxDiv">
+                <img src="images/pic1.jpg" class="secondBoxImg" alt="">
+                <h2>Example</h2>
+                <h3>CREATIVE SOLUTIONS</h3>
+                <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <button class="secondBoxButton buttonStyle">READ MORE</button>
+            </div>
+        </section>
+    </div>
+    <div class="callbackBox" id="wholeCallbackForm">
+        <!-- <div class="callbackInnerCont"> -->
+        <div class="callbackWrapper">
+            <div class=" callbackHeader">
+                <h1>Request a callback</h1>
+            </div>
+            <form class="contactForm" action="">
+                <div class="">
+                    <input type="text" class="callbackInput" placeholder="Name">
+                </div>
+                <div class="">
+                    <input type="text" class="callbackInput" placeholder="Phone number">
+                </div>
+                <div class="">
+                    <input type="text" class="callbackInput" placeholder="Notes">
+                </div>
+                <div>
+                    <button class="" id="callbackBtn">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <div class=" callbackInnerCont callbackBoxThanks noDisplay">
+            <div class="callbackHeaderThanks">
+                <h1>Thanks, we'll be in touch!</h1>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="fourthBox">
+        <div class="fourthBoxLeft">
+            <div class="row1">
+                <div class="fourthBoxImage noDisplay" id="fourthBoxImageOne"></div>
+                <div class="fourthBoxImage noDisplay" id="fourthBoxImageTwo"></div>
+            </div>
+            <div class="row2">
+                <div class="fourthBoxImage noDisplay" id="fourthBoxImageThree"></div>
+                <div class="fourthBoxImage noDisplay" id="fourthBoxImageFour"></div>
+            </div>
+        </div>
+        <div class="fourthBoxRight">
+            <div class="fourthBoxText">
+                <h1>We create stunning websites</h1>
+                <h2>Get more for your business</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dicta tenetur ducimus et,
+                    sed
+                    aut exercitationem pariatur quae voluptatem vel, tempora, a distinctio inventore
+                    praesentium?
+                    Accusantium quo recusandae aspernatur esse?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="nav">
+
+        <div class="footerBox">
+            <div class="bottomMenuAndFooter">
+                <div class="bottomMenu">
+                    <div class="firstCol menuDiv">
+                        <h2><a href="//">Partnership</a></h2>
+                        <p><a href="//">Websites</a></p>
+                        <p><a href="//">Social Media</a></p>
+                        <p><a href="//">Branding</a></p>
+                    </div>
+                    <div class="secondCol menuDiv">
+                        <h2><a href="//">About</a></h2>
+                        <p><a href="//">Our Projects</a></p>
+                        <p><a href="//">Careers</a></p>
+                    </div>
+                    <div class="thirdCol menuDiv">
+                        <h2><a href="//">Support</a></h2>
+                        <p><a href="//">Support Request</a></p>
+                        <p><a href="//">Contact</a></p>
+                    </div>
+                </div>
+
+                <div class="emailDiv" id="emailBox">
+                    <div class="callbackHeader">
+                        <h1>Sign up to our mailing list</h1>
+                    </div>
+                    <form class="mailingForm" action="" id="emailSignUp">
+                        <div class="mailingDiv">
+                            <input type="text" placeholder="Email" id="emailInput">
+                            <button class="" id="mailingBtn">SUBMIT</button>
+                        </div>
+                        <h3 id="emailThanksMsg" class="noDisplayOpacity">Thanks for signing up!</h3>
+                    </form>
+                </div>
+                <div class="emailDiv noDisplay" id="emailThanks">
+                    <div class="callbackHeader ">
+                        <h1>Thanks for signing up!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="footerText">
+                <div class="icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="cr">Copyright&copy; 2022</div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    </div>
+
     <script src="app.js"></script>
 </body>
+
+<style>
+    @media screen and (max-width: 1450px) {
+        .bottomMenuAndFooter {
+            flex-direction: column-reverse;
+        }
+
+        #mailingBtn {
+            /* margin-left: -50px; */
+            width: 10vw;
+        }
+
+        /* #emailBox {
+            /* padding */
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        #hamburger {
+            color: white;
+            display: block;
+            ;
+        }
+
+
+        /* #nav {
+            flex-direction: column;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+            padding-bottom: 2%;
+            position: relative;
+
+
+        } */
+
+        #nav {
+            /* flex-direction: column; */
+            height: auto;
+            padding: 1%;
+            position: relative
+                /* border: 1px solid pink; */
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+            display: none;
+            width: 100%;
+            /* border: 1px solid pink; */
+            text-align: center;
+            margin: 0%;
+        }
+
+
+        .navItem {
+            font-size: 2vw;
+            margin: 1%;
+        }
+
+        .firstBoxMainDiv {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 20% 0%;
+        }
+
+        #firstBoxLeft {
+            /* width: 100%; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        #quoteButton {
+            font-size: 1.6vw;
+            width: 18vw;
+        }
+
+        #altButtonStyle {
+            margin: 0% 2%;
+            font-size: 1.6vw;
+        }
+
+        .firstBoxText>h1 {
+            font-size: 5vw;
+            text-align: center;
+        }
+
+        .firstBoxText>p {
+            font-size: 2.3vw;
+            text-align: center;
+        }
+
+        .firstBoxRight {
+            /* width: 100%; */
+            /* display: flex; */
+            justify-content: center;
+            /* justify-content: flex-start; */
+            align-items: center;
+            /* text-align: center; */
+        }
+
+        .mainImage {
+            width: 100%;
+        }
+
+        #mailingBtn {
+            margin-left: -20px;
+        }
+
+        .secondBoxSection {
+            padding: 2% 10%;
+        }
+
+        .thirdBox {
+            flex-wrap: wrap;
+        }
+
+        .thirdBox>div:first-of-type {
+            width: 80%;
+            margin: 2% 10%;
+            margin-top: 0%;
+            /* text-align: ; */
+            /* align-self: center; */
+            /* border: 2px solid red; */
+        }
+
+        .thirdBoxDiv>h1 {
+            text-align: center;
+            /* font-size: 2.2vw; */
+        }
+</style>
+
+
 
 </html>

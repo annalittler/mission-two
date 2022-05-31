@@ -7,7 +7,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   border: none;
   margin: 0;
-  color: rgb(65, 65, 65);
+  /* color: rgb(65, 65, 65); */
 }
 
 #mainContainer {
@@ -23,17 +23,26 @@ body {
   flex-direction: column;
   width: 100vw;
   padding: 0px;
+  /* border: solid 5px pink; */
 }
 
-.navAndFirstBox {
-  background: rgb(9, 63, 142);
+.footerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 2px solid white; */
+  /* width: 40%; */
+  /* height: 5%; */
+  padding: 1%;
+  margin: 0px;
+}
 
-  background: linear-gradient(
-    90deg,
-    rgba(9, 63, 142, 1) 1%,
-    rgba(29, 112, 199, 1) 46%,
-    rgba(78, 165, 255, 1) 100%
-  );
+.bottomMenuAndFooter {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid pink; */
+  padding: 1% 5%;
+  justify-content: space-between;
 }
 
 #nav {
@@ -56,24 +65,175 @@ body {
   );
   width: 100%;
   width: 100vw;
-  padding: 0px 25px;
+  padding: 0px 2%;
   margin-top: 0px;
   position: sticky;
   top: 0;
+  padding-right: 2wv;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.popup-bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(123, 163, 206, 0.502);
+  /* z-index: 11; */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.popupInput {
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  font-size: 1vw;
+
+  /* transform: translateX(90px); */
+  margin: 1.5%;
+  /* padding: 0 30px; */
+  color: rgb(65, 65, 65);
+  /* width: 350px; */
+  width: 18vw;
+  /* height: 6vh; */
+  padding: 1% 4%;
+}
+
+#popuph2 {
+  color: white;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#popup {
+  /* border: 2px solid pink; */
+  /* background-color: rgb(43, 134, 230); */
+  background: linear-gradient(
+      90deg,
+      rgba(9, 63, 142, 0.85) 1%,
+      rgba(29, 112, 199, 0.85) 46%,
+      rgba(78, 165, 255, 0.85) 100%
+    ),
+    url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-position: 50%;
+  /* background-position: 0%; */
+
+  /* height: 50px; */
+  height: 50%;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  /* z-index: 1; */
+}
+
+.popupMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1%;
+  height: 100%;
+  /* padding-bottom: 2%; */
+  /* border: 1px solid red; */
+}
+
+.popupAltStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  /* border: 1px solid red; */
+  padding: 15%;
+  color: white;
+  font-size: 1.3vw;
+}
+
+.popupOff {
+  /* opacity: 0;
+  visibility: hidden; */
+  display: none;
+}
+
+.popupOn {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popup > h2 {
+  margin-top: 5%;
+  font-size: 1.5vw;
+  color: white;
+}
+
+#popupBtn {
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  color: rgb(43, 134, 230);
+  transition: background-color 0.1s;
+  border: none;
+  width: 10vw;
+  font-size: 1vw;
+  font-weight: 600;
+  height: 6vh;
+  transition: color 0.1s;
+  margin: 1.5%;
+  padding: 1%;
+}
+
+#popupBtn:hover {
+  box-shadow: 0px 0px 15px rgba(186, 188, 202, 0.378);
+}
+
+#popupX {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#popupX:hover {
+  color: rgb(226, 226, 226);
 }
 
 .navItem {
-  margin: 0px 20px;
+  margin: 0px 40px;
   text-decoration: inherit;
   color: white;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.5vw;
   transition: color 0.1s;
 }
 
 .navItem:hover {
   color: rgb(226, 226, 226);
   /* box-shadow: inset; */
+}
+
+.menuDiv h2:hover,
+.menuDiv p:hover {
+  color: rgb(226, 226, 226);
+  /* box-shadow: inset; */
+}
+
+.red {
+  color: red;
 }
 
 a {
@@ -86,70 +246,288 @@ a {
   flex-direction: column;
 }
 
-#firstBox {
-  height: 92vh;
+.firstBoxMainDiv {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding: 5% 0%;
+  /* border: 2px solid blue; */
+  /* width: 100%; */
+}
+
+#firstBoxLeft {
   margin: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(9, 63, 142, 0.7) 1%,
-    rgba(29, 112, 199, 0.7) 55%,
-    rgba(78, 165, 255, 0.7) 100%
-  );
   background-size: cover;
-  width: 100%;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* border: 2px solid red; */
+  width: 50%;
+  align-items: flex-end;
 }
 
-.mainImageDiv {
-  width: 200px;
-  height: 200px;
+.firstBoxRight {
+  /* border: 2px solid red; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  padding-left: 0;
+}
 
+.mainImage {
+  width: 70%;
+  /* transform: translate(20%); */
+  justify-self: center;
+
+  /* border: 1px solid blue; */
+  /* z-index: 1; */
 }
 
 .firstBoxText {
-  width: 40%;
-  font-size: 30px;
   font-weight: 200;
-  /* text-align: center; */
-  /* border: 2px solid red; */
-  color: white;
+  color: rgb(43, 134, 230);
+  /* border: 1px solid pink; */
 }
 
-.firstBoxText > h1,
+.firstBoxText > h1 {
+  font-size: 4vw;
+}
+
 .firstBoxText > p {
-  text-align: center;
+  font-size: 1.9vw;
 }
 
-.quoteButton {
-  font-size: 18px;
-  font-weight: 600;
-  height: 10;
-  width: 15%;
-  margin: 20px;
-  padding: 18px;
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  width: 50vw;
+}
+
+.mailingForm {
+  /* border: 2px solid orange; */
+  width: auto;
+}
+
+#nameInput,
+#emailInput,
+#mailingBtn {
+  border-radius: 50px;
   border: none;
-  box-shadow: 0px 0px 10px rgba(17, 58, 154, 0.895);
-  border-radius: 8px;
-  transition: background-color 0.1s;
-  margin-bottom: 75px;
+  font-size: 1vw;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
 }
 
-.quoteButton:hover {
-  /* transform: translateY(-2px); */
-  background-color: rgb(226, 226, 226);
+#emailInput {
+  color: rgb(65, 65, 65);
+  width: 23vw;
+  padding: 1.5% 3%;
+  font-size: 1.2vw;
+}
+
+#mailingBtn {
+  margin-left: -50px;
+  width: 8vw;
+  padding: 1.5% 3%;
+  background-color: rgb(43, 134, 230);
+  color: white;
+  font-size: 1.2vw;
+  /* height: 6vh; */
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  transition: background-color 0.1s;
+}
+
+#mailingBtn:hover {
+  background-color: rgb(69, 149, 234);
+}
+
+#emailThanks {
+  align-self: center;
+}
+
+#emailThanksMsg {
+  font-size: 1vw;
+}
+
+.fadeOut {
+  animation: fade 2s forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    /* height: 0; */
+  }
+}
+
+.noDisplayOpacity {
+  opacity: 0;
+}
+
+.callbackBox {
+  background: linear-gradient(
+      90deg,
+      rgba(9, 63, 142, 0.85) 1%,
+      rgba(29, 112, 199, 0.85) 46%,
+      rgba(78, 165, 255, 0.85) 100%
+    ),
+    url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-position: 50%;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12%;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 40%;
+
+  max-height: 18vh;
+}
+
+.callbackBoxThanks {
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 55vh; */
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 6%;
+}
+
+.callbackHeaderThanks > h1 {
+  font-size: 1.8vw;
+}
+
+#footer {
+  background: linear-gradient(
+      90deg,
+      rgba(9, 63, 142, 0.85) 1%,
+      rgba(29, 112, 199, 0.85) 46%,
+      rgba(78, 165, 255, 0.85) 100%
+    ),
+    url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-position: 50%;
+  /* height: 360px; */
+}
+.footerBox {
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* height: 80px; */
+  align-items: space-around;
+  color: white;
+  text-align: center;
+  padding: 2% 4%;
+  padding-bottom: 0;
+  /* padding-bottom: 220px; */
+  /* border: 1px solid purple; */
+}
+
+.bottomMenu {
+  /* border: 2px peachpuff solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.menuDiv {
+  margin: 0px 40px;
+}
+
+.menuDiv > h2 {
+  /* margin: 20px 50px; */
+  font-size: 1.4vw;
+}
+
+.menuDiv > p {
+  /* margin: 20px 50px; */
+  font-size: 1.3vw;
+}
+
+.menuDiv > h2,
+.menuDiv > p {
+  text-align: left;
+}
+
+.fa-brands {
+  font-size: 1.5vw;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+.cr {
+  /* margin-bottom: 1%; */
+  font-size: 0.8vw;
+}
+
+.callbackHeader {
+  /* border: 1px solid purple; */
+  padding: 0px;
+  font-size: 1vw;
+  /* height: 80px */
+}
+
+.callbackInput {
+  border-radius: 50px;
+  border: none;
+  margin: 1% 5%;
+  width: 20vw;
+  padding: 1.5% 3%;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  font-size: 1.2vw;
+  color: rgb(65, 65, 65);
+}
+
+input:focus {
+  outline: none;
+}
+
+#callbackBtn {
+  border-radius: 50px;
+  border: none;
+  width: 12vw;
+  padding: 1.5% 3%;
+  margin: 1% 5%;
+  font-weight: 500;
+  font-size: 1.2vw;
+  background-color: white;
+  color: rgb(43, 134, 230);
+  /* padding: 10px 20px; */
+}
+
+/* ////// */
+
+#quoteButton {
+  font-size: 1vw;
+  width: 15vw;
+  padding: 3%;
+  margin-left: 0;
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  /* border: 1px solid pink; */
 }
 
 #secondBox {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   padding: 5% 0;
   color: rgb(65, 65, 65);
   background-color: white;
+  /* height: auto; */
 }
 
 .secondBoxImg {
@@ -163,7 +541,7 @@ a {
   flex-direction: row;
   justify-content: left;
   justify-content: space-around;
-  padding: 0 10%;
+  padding: 0% 10%;
 }
 
 .secondBoxTitleDiv {
@@ -180,49 +558,78 @@ a {
 .secondBoxDiv h2,
 .secondBoxDiv h3,
 .secondBoxDiv p {
-  margin: 5% 25px;
+  margin: 3% 8%;
   /* border: 2px red solid; */
 }
 
-.secondBoxDiv h3 {
-  font-size: 25px;
-  font-weight: 350;
-  font-style: italic;
-  color: rgb(43, 134, 230);
-  margin-top: -15px;
-  /* border: 2px solid green; */
-}
-
 .secondBoxDiv h2 {
-  font-size: 35px;
+  font-size: 2vw;
   font-weight: 400;
   /* border: 2px solid green; */
 }
 
+.secondBoxDiv h3 {
+  font-size: 1.7vw;
+  font-weight: 350;
+  /* font-style: italic; */
+  color: rgb(43, 134, 230);
+  /* margin-top: -15px; */
+  /* border: 2px solid green; */
+}
+
 .secondBoxDiv p {
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 200;
 }
 
-.secondBoxButton {
-  font-size: 15px;
-  padding: 15px 10px;
-  margin: 18px 25px;
-
-  height: 50px;
-  width: 125px;
-  /* background-color: rgb(33, 100, 201); */
-  /* background-color: rgb(9, 63, 142, 0.8); */
-  background-color: rgb(43, 134, 230);
-  /* background-color: rgb(78, 165, 255, 0.8); */
-
-  color: white;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgb(180, 180, 180);
+.secondBoxTitleText {
+  font-size: 2.6vw;
 }
 
-.secondBoxButton:hover {
+.buttonStyle {
+  border-radius: 50px;
+  background-color: rgb(43, 134, 230);
+  box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
+  color: white;
+  transition: background-color 0.1s;
+  border: none;
+  margin: 5%;
+  width: 10vw;
+  font-size: 1vw;
+  padding: 3%;
+}
+
+.secondBoxButton {
+  font-size: 1vw;
+  margin: 5% 8%;
+  width: 10vw;
+  padding: 3%;
+}
+
+#altButtonStyle {
+  margin: 0% 2.5%;
+  font-size: 1vw;
+  /* font-weight: 600; */
+  height: 0px;
+  /* width: 175px; */
+  /* margin: 20px -20px; */
+  /* padding: 15px 5px; */
+  background-color: transparent;
+  /* background-color: brown; */
+  border-radius: 50px;
+  padding: 0px;
+  /* box-shadow: 0px 0px 15px rgb(180, 180, 180); */
+  color: rgb(43, 134, 230);
+  /* transition: background-color 0.1s; */
+  border: none;
+}
+
+.altButtonStyle:hover {
+  color: rgb(78, 165, 255, 1);
+  /* color: rgb(33, 100, 201); */
+}
+
+.buttonStyle:hover {
   background-color: rgb(69, 149, 234);
 }
 
@@ -240,41 +647,43 @@ a {
   background-size: cover;
   flex-direction: row;
   justify-content: space-around;
-  height: 325px;
+  /* height: 40vh; */
   align-items: center;
   color: white;
   text-align: center;
-  padding: 0 150px;
-  padding: 0 10%;
+  padding: 5% 10%;
   /* height: 90vh; */
   /* border: 2px red solid; */
   /* background-color: red; */
 }
 
 .thirdBox > div:first-of-type {
-  width: auto;
+  width: 28%;
   /* text-align: left; */
 }
 
 .thirdBoxDiv {
   width: 18%;
   /* border: 2px solid pink; */
-  height: 0 auto;
+
   /* padding: 0; */
 }
 
 .thirdBoxDiv > h1 {
   text-align: left;
+  font-size: 2.2vw;
 }
 
 .thirdBoxDiv > h3 {
   /* border: 2px solid red; */
-  font-size: 65px;
+  font-size: 4vw;
   margin: 0;
 }
 
 .thirdBoxDiv > p {
   /* border: 2px solid red; */
+  font-size: 1.1vw;
+
   margin: 0;
 }
 
@@ -283,23 +692,43 @@ a {
   color: rgb(226, 226, 226);
 }
 
-.imgDesc {
-  text-align: left;
-}
-
 .fourthBox {
   display: flex;
   flex-direction: row;
-  height: 800px;
+  /* height: 85vh; */
   background-color: white;
   justify-content: center;
   align-items: center;
+  margin: 0px 15%;
   /* border: 2px solid black; */
 }
 
 .fourthBoxText {
-  margin: 100px 60px;
+  /* margin: 100px 60px; */
+  padding-right: 1%;
+  color: rgb(65, 65, 65);
+  /* height: auto; */
   /* border: red solid 1px; */
+}
+
+.fourthBoxText > h1 {
+  font-size: 2.5vw;
+  color: rgb(43, 134, 230);
+  /* border: 2px solid pink; */
+  margin: 0px;
+}
+
+.fourthBoxText > h2 {
+  font-size: 1.8vw;
+  color: rgb(69, 149, 234);
+  /* border: 2px solid pink; */
+  /* margin: 10px 0px; */
+}
+
+.fourthBoxText > p {
+  font-size: 1.5vw;
+  /* color: purple; */
+  /* margin: 0px; */
 }
 
 .fourthBoxLeft {
@@ -307,11 +736,7 @@ a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
-  padding: 150px 25px;
-  padding-left: 100px;
-  /* margin: 100px 0px; */
 }
 
 .row1,
@@ -323,44 +748,32 @@ a {
 .fourthBoxRight {
   /* border: 2px red solid; */
   width: 50%;
-  padding: 50px 25px;
-  padding-right: 100px;
+  padding: 6%;
+  /* padding-right: 100px; */
 }
 
 .fourthBoxImage {
-  /* border: 5px solid blue; */
+  /* border: 1px solid blue; */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
-}
-
-.fourthBoxText > p {
-  font-size: 20px;
+  width: 20%;
+  /* height: 0 auto; */
 }
 
 #fourthBoxImageOne {
   background-image: url("images/graph-21.png");
-  /* align-self: flex-end; */
-  /* margin-right: 100px; */
 }
 
 #fourthBoxImageTwo {
   background-image: url("images/graph-7.png");
-  /* align-self: flex-start; */
-  /* margin-left: 100px; */
 }
 
 #fourthBoxImageThree {
   background-image: url("images/graph-24.png");
-  /* align-self: flex-start; */
-  /* margin-left: 100px; */
 }
 
 #fourthBoxImageFour {
   background-image: url("images/graph-3.png");
-  /* align-self: flex-start; */
-  /* margin-left: 100px; */
 }
 
 .fourthBoxImageSlideLeft {
@@ -400,4 +813,20 @@ a {
 
 .noDisplay {
   display: none;
+  /* opacity: 0; */
+}
+
+#hamburger {
+  color: white;
+  display: none;
+  padding: 2%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.show {
+  display: block;
 }
