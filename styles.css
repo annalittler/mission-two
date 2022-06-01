@@ -1,21 +1,18 @@
 * {
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 html,
 body {
   margin: 0;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
-  /* background-color: #e7da7c; */
   font-family: "Noto Sans", sans-serif;
   border: none;
   margin: 0;
-  /* color: rgb(65, 65, 65); */
 }
 
 #mainContainer {
@@ -23,16 +20,12 @@ body {
   flex-direction: column;
   width: 100vw;
   padding: 0px;
-  /* border: solid 5px pink; */
 }
 
 .footerText {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* border: 2px solid white; */
-  /* width: 40%; */
-  /* height: 5%; */
   padding: 1%;
   margin: 0px;
 }
@@ -40,8 +33,7 @@ body {
 .bottomMenuAndFooter {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid pink; */
-  padding: 1% 5%;
+  padding: 1% 6%;
   justify-content: space-between;
 }
 
@@ -51,11 +43,6 @@ body {
   justify-content: right;
   align-items: center;
   height: 10vh;
-  /* background-color: #75b1db83;*/
-  /* background-color: #daa4d6; */
-  /* background-color: rgba(25, 72, 240, 0.5); */
-  /* background-color: rgba(92, 41, 98, 0.5); */
-  /* box-shadow: inset 0 0 0 1000px rgba(92, 41, 98, 0.5); */
   background: rgb(9, 63, 142);
   background: linear-gradient(
     90deg,
@@ -78,7 +65,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgba(123, 163, 206, 0.502);
-  /* z-index: 11; */
+  z-index: 11;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -87,7 +74,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
   transition: visibility 0s, opacity 0.5s;
 }
 
@@ -97,18 +83,15 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
   font-size: 1vw;
 
-  /* transform: translateX(90px); */
   margin: 1.5%;
-  /* padding: 0 30px; */
   color: rgb(65, 65, 65);
-  /* width: 350px; */
   width: 18vw;
-  /* height: 6vh; */
   padding: 1% 4%;
 }
 
 #popuph2 {
   color: white;
+  font-size: 2vw;
 }
 
 .bg-active {
@@ -117,8 +100,6 @@ body {
 }
 
 #popup {
-  /* border: 2px solid pink; */
-  /* background-color: rgb(43, 134, 230); */
   background: linear-gradient(
       90deg,
       rgba(9, 63, 142, 0.85) 1%,
@@ -127,14 +108,11 @@ body {
     ),
     url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
   background-position: 50%;
-  /* background-position: 0%; */
-
-  /* height: 50px; */
-  height: 50%;
+  height: 60%;
+  max-width: 40%;
   border-radius: 50px;
   position: relative;
   box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
-  /* z-index: 1; */
 }
 
 .popupMain {
@@ -144,8 +122,6 @@ body {
   align-items: center;
   padding: 1%;
   height: 100%;
-  /* padding-bottom: 2%; */
-  /* border: 1px solid red; */
 }
 
 .popupAltStyle {
@@ -157,15 +133,12 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  /* border: 1px solid red; */
   padding: 15%;
   color: white;
   font-size: 1.3vw;
 }
 
 .popupOff {
-  /* opacity: 0;
-  visibility: hidden; */
   display: none;
 }
 
@@ -190,7 +163,6 @@ body {
   width: 10vw;
   font-size: 1vw;
   font-weight: 600;
-  height: 6vh;
   transition: color 0.1s;
   margin: 1.5%;
   padding: 1%;
@@ -223,13 +195,11 @@ body {
 
 .navItem:hover {
   color: rgb(226, 226, 226);
-  /* box-shadow: inset; */
 }
 
 .menuDiv h2:hover,
 .menuDiv p:hover {
   color: rgb(226, 226, 226);
-  /* box-shadow: inset; */
 }
 
 .red {
@@ -250,25 +220,20 @@ a {
   display: flex;
   flex-direction: row;
   width: auto;
-  padding: 5% 0%;
-  /* border: 2px solid blue; */
-  /* width: 100%; */
+  padding: 7% 0%;
 }
 
 #firstBoxLeft {
   margin: 0;
   background-size: cover;
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 2px solid red; */
   width: 50%;
   align-items: flex-end;
 }
 
 .firstBoxRight {
-  /* border: 2px solid red; */
   width: 50%;
   display: flex;
   align-items: center;
@@ -279,17 +244,12 @@ a {
 
 .mainImage {
   width: 70%;
-  /* transform: translate(20%); */
   justify-self: center;
-
-  /* border: 1px solid blue; */
-  /* z-index: 1; */
 }
 
 .firstBoxText {
   font-weight: 200;
   color: rgb(43, 134, 230);
-  /* border: 1px solid pink; */
 }
 
 .firstBoxText > h1 {
@@ -304,12 +264,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* border: 1px solid red; */
   width: 50vw;
 }
 
 .mailingForm {
-  /* border: 2px solid orange; */
   width: auto;
 }
 
@@ -325,18 +283,17 @@ a {
 #emailInput {
   color: rgb(65, 65, 65);
   width: 23vw;
-  padding: 1.5% 3%;
+  padding: 2% 3%;
   font-size: 1.2vw;
 }
 
 #mailingBtn {
   margin-left: -50px;
   width: 8vw;
-  padding: 1.5% 3%;
+  padding: 2% 3%;
   background-color: rgb(43, 134, 230);
   color: white;
   font-size: 1.2vw;
-  /* height: 6vh; */
   box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
   transition: background-color 0.1s;
 }
@@ -365,7 +322,6 @@ a {
 
   100% {
     opacity: 0;
-    /* height: 0; */
   }
 }
 
@@ -400,7 +356,6 @@ a {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
-  /* height: 55vh; */
   align-items: center;
   color: white;
   text-align: center;
@@ -420,26 +375,20 @@ a {
     ),
     url(images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
   background-position: 50%;
-  /* height: 360px; */
 }
 .footerBox {
   display: flex;
   background-size: cover;
   flex-direction: column;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* height: 80px; */
   align-items: space-around;
   color: white;
   text-align: center;
   padding: 2% 4%;
   padding-bottom: 0;
-  /* padding-bottom: 220px; */
-  /* border: 1px solid purple; */
 }
 
 .bottomMenu {
-  /* border: 2px peachpuff solid; */
   display: flex;
   justify-content: center;
 }
@@ -449,12 +398,10 @@ a {
 }
 
 .menuDiv > h2 {
-  /* margin: 20px 50px; */
   font-size: 1.4vw;
 }
 
 .menuDiv > p {
-  /* margin: 20px 50px; */
   font-size: 1.3vw;
 }
 
@@ -470,15 +417,12 @@ a {
 }
 
 .cr {
-  /* margin-bottom: 1%; */
   font-size: 0.8vw;
 }
 
 .callbackHeader {
-  /* border: 1px solid purple; */
   padding: 0px;
   font-size: 1vw;
-  /* height: 80px */
 }
 
 .callbackInput {
@@ -506,10 +450,7 @@ input:focus {
   font-size: 1.2vw;
   background-color: white;
   color: rgb(43, 134, 230);
-  /* padding: 10px 20px; */
 }
-
-/* ////// */
 
 #quoteButton {
   font-size: 1vw;
@@ -518,7 +459,6 @@ input:focus {
   margin-left: 0;
   border-radius: 50px;
   box-shadow: 0px 0px 15px rgba(0, 11, 97, 0.378);
-  /* border: 1px solid pink; */
 }
 
 #secondBox {
@@ -527,16 +467,13 @@ input:focus {
   padding: 5% 0;
   color: rgb(65, 65, 65);
   background-color: white;
-  /* height: auto; */
 }
 
 .secondBoxImg {
   width: 100%;
-  /* border: 2px red solid; */
 }
 
 .secondBoxSection {
-  /* border: 2px blue solid; */
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -547,11 +484,9 @@ input:focus {
 .secondBoxTitleDiv {
   text-align: center;
   font-size: 25px;
-  /* height: auto; */
 }
 
 .secondBoxDiv {
-  /* border: 2px red solid; */
   width: 30%;
 }
 
@@ -559,22 +494,17 @@ input:focus {
 .secondBoxDiv h3,
 .secondBoxDiv p {
   margin: 3% 8%;
-  /* border: 2px red solid; */
 }
 
 .secondBoxDiv h2 {
   font-size: 2vw;
   font-weight: 400;
-  /* border: 2px solid green; */
 }
 
 .secondBoxDiv h3 {
   font-size: 1.7vw;
   font-weight: 350;
-  /* font-style: italic; */
   color: rgb(43, 134, 230);
-  /* margin-top: -15px; */
-  /* border: 2px solid green; */
 }
 
 .secondBoxDiv p {
@@ -609,24 +539,16 @@ input:focus {
 #altButtonStyle {
   margin: 0% 2.5%;
   font-size: 1vw;
-  /* font-weight: 600; */
   height: 0px;
-  /* width: 175px; */
-  /* margin: 20px -20px; */
-  /* padding: 15px 5px; */
   background-color: transparent;
-  /* background-color: brown; */
   border-radius: 50px;
   padding: 0px;
-  /* box-shadow: 0px 0px 15px rgb(180, 180, 180); */
   color: rgb(43, 134, 230);
-  /* transition: background-color 0.1s; */
   border: none;
 }
 
 .altButtonStyle:hover {
   color: rgb(78, 165, 255, 1);
-  /* color: rgb(33, 100, 201); */
 }
 
 .buttonStyle:hover {
@@ -634,7 +556,6 @@ input:focus {
 }
 
 .thirdBox {
-  /* border: 2px red solid; */
   background: linear-gradient(
       90deg,
       rgba(9, 63, 142, 0.85) 1%,
@@ -647,26 +568,18 @@ input:focus {
   background-size: cover;
   flex-direction: row;
   justify-content: space-around;
-  /* height: 40vh; */
   align-items: center;
   color: white;
   text-align: center;
   padding: 5% 10%;
-  /* height: 90vh; */
-  /* border: 2px red solid; */
-  /* background-color: red; */
 }
 
 .thirdBox > div:first-of-type {
   width: 28%;
-  /* text-align: left; */
 }
 
 .thirdBoxDiv {
   width: 18%;
-  /* border: 2px solid pink; */
-
-  /* padding: 0; */
 }
 
 .thirdBoxDiv > h1 {
@@ -675,13 +588,11 @@ input:focus {
 }
 
 .thirdBoxDiv > h3 {
-  /* border: 2px solid red; */
   font-size: 4vw;
   margin: 0;
 }
 
 .thirdBoxDiv > p {
-  /* border: 2px solid red; */
   font-size: 1.1vw;
 
   margin: 0;
@@ -692,128 +603,59 @@ input:focus {
   color: rgb(226, 226, 226);
 }
 
-.fourthBox {
-  display: flex;
-  flex-direction: row;
-  /* height: 85vh; */
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 15%;
-  /* border: 2px solid black; */
-}
-
 .fourthBoxText {
-  /* margin: 100px 60px; */
   padding-right: 1%;
   color: rgb(65, 65, 65);
-  /* height: auto; */
-  /* border: red solid 1px; */
+  width: 45%;
 }
 
 .fourthBoxText > h1 {
   font-size: 2.5vw;
   color: rgb(43, 134, 230);
-  /* border: 2px solid pink; */
   margin: 0px;
 }
 
 .fourthBoxText > h2 {
   font-size: 1.8vw;
   color: rgb(69, 149, 234);
-  /* border: 2px solid pink; */
-  /* margin: 10px 0px; */
 }
 
 .fourthBoxText > p {
   font-size: 1.5vw;
-  /* color: purple; */
-  /* margin: 0px; */
-}
-
-.fourthBoxLeft {
-  /* border: 2px red solid; */
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.row1,
-.row2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.fourthBoxRight {
-  /* border: 2px red solid; */
-  width: 50%;
-  padding: 6%;
-  /* padding-right: 100px; */
 }
 
 .fourthBoxImage {
-  /* border: 1px solid blue; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20%;
-  /* height: 0 auto; */
+  width: 100%;
+}
+
+.firstBlock {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.secondBlock {
+  width: 40%;
+  padding: 5% 0%;
+}
+
+.fourthBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 5%;
 }
 
 #fourthBoxImageOne {
-  background-image: url("images/graph-21.png");
-}
-
-#fourthBoxImageTwo {
-  background-image: url("images/graph-7.png");
-}
-
-#fourthBoxImageThree {
-  background-image: url("images/graph-24.png");
-}
-
-#fourthBoxImageFour {
-  background-image: url("images/graph-3.png");
-}
-
-.fourthBoxImageSlideLeft {
-  animation: slideInFromLeft 1s ease-in-out;
-}
-
-.fourthBoxImageSlideLeftSlow {
-  animation: slideInFromLeft 1.3s ease-in-out;
-}
-
-.fourthBoxImageSlideRight {
-  animation: slideInFromRight 1s ease-in-out;
-}
-
-.fourthBoxImageSlideRightSlow {
-  animation: slideInFromRight 1.3s ease-in-out;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
 }
 
 .noDisplay {
   display: none;
-  /* opacity: 0; */
 }
 
 #hamburger {
@@ -830,3 +672,52 @@ ul {
 .show {
   display: block;
 }
+
+.toAnimateUp {
+  opacity: 0;
+  transform: translateY(3em);
+  transition: transform 0.5s 0.3s ease-out, opacity 0.5s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+.toAnimateUp.is-visible {
+  opacity: 1;
+  transform: translateY(0em);
+}
+
+/* 
+.toAnimateDown {
+  opacity: 0;
+  transform: translateY(-3em);
+  transition: transform 1s 0.5s ease-out, opacity 0.5s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+.toAnimateDown.is-visible {
+  opacity: 1;
+  transform: translateY(0em);
+}
+
+.toSlideInRight {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: transform 1s 0.5s ease-out, opacity 0.5s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+.toSlideInRight.is-visible {
+  opacity: 1;
+  transform: translateX(0em);
+}
+
+.toSlideInLeft {
+  opacity: 0;
+  transform: translateX(-10em);
+  transition: transform 1s 0.5s ease-out, opacity 0.5s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+.toSlideInLeft.is-visible {
+  opacity: 1;
+  transform: translateX(0em);
+} */

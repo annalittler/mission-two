@@ -1,36 +1,7 @@
-const navButtonHome = document.querySelector("#homeButton");
-
-document.addEventListener("keydown", function () {
-  console.log("Hello!");
-});
-
-const fourthBox = document.querySelector(".fourthBox");
-const fourthBoxImageOne = document.querySelector("#fourthBoxImageOne");
-const fourthBoxImageTwo = document.querySelector("#fourthBoxImageTwo");
-const fourthBoxImageThree = document.querySelector("#fourthBoxImageThree");
-const fourthBoxImageFour = document.querySelector("#fourthBoxImageFour");
-
-fourthBox.addEventListener("mouseover", function () {
-  fourthBoxImageOne.classList.remove("noDisplay");
-  fourthBoxImageOne.classList.add("fourthBoxImageSlideLeftSlow");
-  fourthBoxImageTwo.classList.remove("noDisplay");
-  fourthBoxImageTwo.classList.add("fourthBoxImageSlideRight");
-  fourthBoxImageThree.classList.remove("noDisplay");
-  fourthBoxImageThree.classList.add("fourthBoxImageSlideLeft");
-  fourthBoxImageFour.classList.remove("noDisplay");
-  fourthBoxImageFour.classList.add("fourthBoxImageSlideRightSlow");
-});
-
 const wholeCallbackForm = document.querySelector("#wholeCallbackBox");
 const callbackForm = document.querySelector("#wholeCallbackForm");
 const callbackBoxThanks = document.querySelector(".callbackBoxThanks");
 const callbackWrapper = document.querySelector(".callbackWrapper");
-
-// callbackForm.addEventListener("submit", (e) => e.preventDefault());
-// callbackForm.addEventListener("submit", () => {
-//   callbackForm.classList.add("noDisplay"),
-//     callbackBoxThanks.classList.remove("noDisplay");
-// });
 
 callbackForm.addEventListener("submit", (e) => e.preventDefault());
 callbackForm.addEventListener("submit", () => {
@@ -43,12 +14,6 @@ const emailForm = document.querySelector("#emailSignUp");
 const emailThanksMsg = document.querySelector("#emailThanksMsg");
 const emailInput = document.querySelector("#emailInput");
 const emailBtn = document.querySelector("#mailingBtn");
-
-// emailForm.addEventListener("submit", (e) => {
-//   e.preventDefault(),
-//     emailBox.classList.add("noDisplay"),
-//     // emailThanksMsg.classList.remove("noDisplayOpacity");
-// });
 
 emailForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -78,8 +43,6 @@ popupX.addEventListener("click", () => {
   popupBg.classList.remove("bg-active");
   popupAlt.classList.remove("popupOn");
   popupForm.classList.remove("popupOff");
-
-  // console.log("bg-active");
 });
 
 const popupForm = document.querySelector(".popupMain");
@@ -92,7 +55,8 @@ popupSubBtn.addEventListener("click", (e) => {
   e.preventDefault();
   popupForm.classList.add("popupOff");
   let firstName = popupNameInput.value.split(" ");
-  popupAlt.innerHTML = `Thanks, ${firstName[0]}! We'll be in touch to discuss your project.`;
+  popupAlt.innerHTML = `<h2>Thanks, ${firstName[0]}!</h2>
+  We'll be in touch to discuss your project.`;
   popupAlt.classList.add("popupOn");
 });
 
@@ -100,3 +64,16 @@ const hamburger = document.querySelector("#hamburger");
 const navUL = document.querySelector("ul");
 
 hamburger.addEventListener("click", () => navUL.classList.toggle("show"));
+
+const callback = function (entries) {
+  entries.forEach((entry) => {
+    entry.target.classList.add("is-visible");
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".show-on-scroll");
+targets.forEach(function (target) {
+  observer.observe(target);
+});

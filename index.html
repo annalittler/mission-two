@@ -28,7 +28,8 @@
 
             </div>
             <div id="popupAlt" class="popupAltStyle">
-                <h2>Thanks, Anna! We'll be in touch to get more information about your project.</h2>
+                <h2>Thanks, user!</h2>
+                <p>We'll be in touch to get more information about your project.</p>
             </div>
             <span id="popupX"><i class="fa-solid fa-x"></i></span>
 
@@ -62,15 +63,13 @@
 
         <div class="firstBoxMainDiv">
 
-            <div id="firstBoxLeft">
-                <div class="firstBoxText">
+            <div id="firstBoxLeft" class="">
+                <div class="firstBoxText toAnimateUp show-on-scroll">
                     <h1>Your Company</h1>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <button class="buttonStyle" id="quoteButton">GET A FREE QUOTE</button>
                     <button id="altButtonStyle">FIND OUT MORE</button>
-
                 </div>
-
             </div>
 
             <div class="firstBoxRight">
@@ -79,13 +78,10 @@
         </div>
     </div>
     </div>
-    <!--  -->
     <div class="thirdBox">
         <div class="thirdBoxDiv">
             <h1>We're a
-                <!-- <br> -->
                 New Zealand
-                <!-- <br> -->
                 based company
             </h1>
         </div>
@@ -102,14 +98,13 @@
             <p>websites built</p>
         </div>
     </div>
-    <!--  -->
-    <div id="secondBox">
+    <div id="secondBox ">
         <div class="secondBoxTitleDiv">
             <h2 class="secondBoxTitleText">How can we help you?</h2>
         </div>
         <section class="secondBoxSection">
-            <div class="secondBoxDiv">
-                <img src="images/pic1.jpg" class="secondBoxImg" alt="">
+            <div class="secondBoxDiv ">
+                <img src="images/pic1.jpg" class="secondBoxImg toAnimateDown show-on-scroll" alt="">
                 <h2>Example</h2>
                 <h3>CREATIVE SOLUTIONS</h3>
                 <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -118,7 +113,7 @@
             </div>
 
             <div class="secondBoxDiv">
-                <img src="images/pic3.jpg" class="secondBoxImg" alt="">
+                <img src="images/pic3.jpg" class="secondBoxImg toAnimateDown show-on-scroll" alt="">
                 <h2>Example</h2>
                 <h3>CREATIVE SOLUTIONS</h3>
                 <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -126,7 +121,7 @@
             </div>
 
             <div class="secondBoxDiv">
-                <img src="images/pic1.jpg" class="secondBoxImg" alt="">
+                <img src="images/pic1.jpg" class="secondBoxImg toAnimateDown show-on-scroll" alt="">
                 <h2>Example</h2>
                 <h3>CREATIVE SOLUTIONS</h3>
                 <p class="imgDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -135,8 +130,7 @@
         </section>
     </div>
     <div class="callbackBox" id="wholeCallbackForm">
-        <!-- <div class="callbackInnerCont"> -->
-        <div class="callbackWrapper">
+        <div class="callbackWrapper toSlideInLeft show-on-scroll">
             <div class=" callbackHeader">
                 <h1>Request a callback</h1>
             </div>
@@ -166,28 +160,21 @@
 
 
     <div class="fourthBox">
-        <div class="fourthBoxLeft">
-            <div class="row1">
-                <div class="fourthBoxImage noDisplay" id="fourthBoxImageOne"></div>
-                <div class="fourthBoxImage noDisplay" id="fourthBoxImageTwo"></div>
-            </div>
-            <div class="row2">
-                <div class="fourthBoxImage noDisplay" id="fourthBoxImageThree"></div>
-                <div class="fourthBoxImage noDisplay" id="fourthBoxImageFour"></div>
-            </div>
+        <div class="fourthBoxText toSlideInRight show-on-scroll firstBlock">
+            <h1>We create websites</h1>
+            <h2>Get more for your business</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dicta tenetur ducimus et,
+                sed
+                aut exercitationem pariatur quae voluptatem vel, tempora, a distinctio inventore
+                praesentium?
+                Accusantium quo recusandae aspernatur esse?
+            </p>
         </div>
-        <div class="fourthBoxRight">
-            <div class="fourthBoxText">
-                <h1>We create stunning websites</h1>
-                <h2>Get more for your business</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dicta tenetur ducimus et,
-                    sed
-                    aut exercitationem pariatur quae voluptatem vel, tempora, a distinctio inventore
-                    praesentium?
-                    Accusantium quo recusandae aspernatur esse?
-                </p>
-            </div>
+        <div class="row2 secondBlock toSlideInRight show-on-scroll">
+            <div id="fourthBoxImageOne"> <img src=" images/graph-21.png" class="fourthBoxImage" alt=""></div>
+
         </div>
+
     </div>
 
     <div id="footer" class="nav">
@@ -245,7 +232,6 @@
 
 
 
-
     </div>
 
     </div>
@@ -260,12 +246,8 @@
         }
 
         #mailingBtn {
-            /* margin-left: -50px; */
             width: 10vw;
         }
-
-        /* #emailBox {
-            /* padding */
 
 
     }
@@ -278,25 +260,10 @@
             ;
         }
 
-
-        /* #nav {
-            flex-direction: column;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            padding: 1%;
-            padding-bottom: 2%;
-            position: relative;
-
-
-        } */
-
         #nav {
-            /* flex-direction: column; */
             height: auto;
             padding: 1%;
             position: relative
-                /* border: 1px solid pink; */
         }
 
         ul {
@@ -306,11 +273,23 @@
             padding: 1%;
             display: none;
             width: 100%;
-            /* border: 1px solid pink; */
             text-align: center;
             margin: 0%;
         }
 
+        .callbackInput {
+            width: 30vw;
+            font-size: 1.5vw;
+        }
+
+        #emailInput {
+            width: 30vw;
+            font-size: 1.5vw;
+        }
+
+        #mailingBtn {
+            font-size: 1.5vw;
+        }
 
         .navItem {
             font-size: 2vw;
@@ -325,7 +304,6 @@
         }
 
         #firstBoxLeft {
-            /* width: 100%; */
             justify-content: center;
             align-items: center;
         }
@@ -351,12 +329,8 @@
         }
 
         .firstBoxRight {
-            /* width: 100%; */
-            /* display: flex; */
             justify-content: center;
-            /* justify-content: flex-start; */
             align-items: center;
-            /* text-align: center; */
         }
 
         .mainImage {
@@ -364,7 +338,7 @@
         }
 
         #mailingBtn {
-            margin-left: -20px;
+            margin-left: -30px;
         }
 
         .secondBoxSection {
@@ -375,21 +349,47 @@
             flex-wrap: wrap;
         }
 
+        #popup {
+
+            width: 70%;
+            max-height: 30%;
+            max-width: none;
+        }
+
+        .popupMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .popupInput {
+            font-size: 2vw;
+            margin: 3%;
+            color: rgb(65, 65, 65);
+            width: 35vw;
+            padding: 1%;
+        }
+
+        .popupAltStyle {
+            padding: 1%;
+            height: 100%;
+            padding: 5%;
+            color: white;
+            font-size: 2vw;
+        }
+
         .thirdBox>div:first-of-type {
             width: 80%;
             margin: 2% 10%;
             margin-top: 0%;
-            /* text-align: ; */
-            /* align-self: center; */
-            /* border: 2px solid red; */
         }
 
         .thirdBoxDiv>h1 {
             text-align: center;
-            /* font-size: 2.2vw; */
         }
+    }
 </style>
-
-
 
 </html>
