@@ -35,7 +35,6 @@ body {
   flex-direction: row;
   padding: 1% 6%;
   justify-content: space-between;
-
 }
 
 #nav {
@@ -87,12 +86,13 @@ body {
   margin: 1.5%;
   color: rgb(65, 65, 65);
   width: 18vw;
-  padding: 1% 4%;
+  padding: 2.5% 4%;
 }
 
 #popuph2 {
   color: white;
   font-size: 2vw;
+  padding: 2.5% 4%;
 }
 
 .bg-active {
@@ -136,7 +136,7 @@ body {
   visibility: hidden;
   padding: 15%;
   color: white;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }
 
 .popupOff {
@@ -166,7 +166,8 @@ body {
   font-weight: 600;
   transition: color 0.1s;
   margin: 1.5%;
-  padding: 1%;
+
+  padding: 2.5% 4%;
 }
 
 #popupBtn:hover {
@@ -343,12 +344,11 @@ a {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
-  padding: 12%;
   align-items: center;
   color: white;
   text-align: center;
-  height: 40%;
-  max-height: 20vh;
+  /* height: 40%; */
+  padding: 4% 10%;
 }
 
 .callbackBoxThanks {

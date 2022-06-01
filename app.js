@@ -55,8 +55,7 @@ popupSubBtn.addEventListener("click", (e) => {
   e.preventDefault();
   popupForm.classList.add("popupOff");
   let firstName = popupNameInput.value.split(" ");
-  popupAlt.innerHTML = `<h2>Thanks, ${firstName[0]}!</h2>
-  We'll be in touch to discuss your project.`;
+  popupAlt.innerHTML = `Thanks, ${firstName[0]}! We'll be in touch to discuss your project.`;
   popupAlt.classList.add("popupOn");
 });
 
