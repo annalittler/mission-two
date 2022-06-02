@@ -166,7 +166,7 @@ body {
   font-weight: 600;
   transition: color 0.1s;
   margin: 1.5%;
-
+  margin: 3%;
   padding: 2.5% 4%;
 }
 
@@ -211,11 +211,6 @@ body {
 a {
   text-decoration: inherit;
   color: inherit;
-}
-
-#mainContainer {
-  display: flex;
-  flex-direction: column;
 }
 
 .firstBoxMainDiv {
@@ -359,7 +354,7 @@ a {
   align-items: center;
   color: white;
   text-align: center;
-  padding: 6%;
+  padding: 10%;
 }
 
 .callbackHeaderThanks > h1 {
@@ -394,19 +389,16 @@ a {
 }
 
 .menuDiv {
-  margin: 0% 12%;
+  margin: 0% 10%;
 }
 
 .menuDiv > h2 {
   font-size: 1.4vw;
+  text-align: left;
 }
 
 .menuDiv > p {
   font-size: 1.3vw;
-}
-
-.menuDiv > h2,
-.menuDiv > p {
   text-align: left;
 }
 

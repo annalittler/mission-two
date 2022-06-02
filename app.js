@@ -3,8 +3,8 @@ const callbackForm = document.querySelector("#wholeCallbackForm");
 const callbackBoxThanks = document.querySelector(".callbackBoxThanks");
 const callbackWrapper = document.querySelector(".callbackWrapper");
 
-callbackForm.addEventListener("submit", (e) => e.preventDefault());
-callbackForm.addEventListener("submit", () => {
+callbackForm.addEventListener("submit", (e) => {
+  e.preventDefault();
   callbackWrapper.classList.add("noDisplay"),
     callbackBoxThanks.classList.remove("noDisplay");
 });
